@@ -1584,7 +1584,7 @@ local colors = {
 	ElementColor = Color3.fromRGB(20, 20, 20)
 }
 local kavoUi = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandLittleBrother/SytroNight4ROBLOX/main/libraries/kavo.lua"))()
-local window = kavoUi.CreateLib("SytroNight V1.2", "BloodTheme")
+local window = kavoUi.CreateLib("SytroNight Reborn, "BloodTheme")
 local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/Libraries/entityHandler.lua", true))()
 
 do
