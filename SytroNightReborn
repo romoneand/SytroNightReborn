@@ -1503,36 +1503,35 @@
 
 
 
-game.StarterGui:SetCore("SendNotification", {
-
-    Title = "SytroNightReborn";
-
-    Text = "Fixed by romlnwza007#3770"; -- what the text says (ofc)
-
-    Duration = 1;
-
-})
-
-wait(1)
-
-game.StarterGui:SetCore("SendNotification", {
-
-    Title = "wait loading SCRIPT";
-
-    Text = "Wait 3 second"; -- what the text says (ofc)
-
-    Duration = 1.5;
-
-})
-
-wait(3)
 
 
 
 
 
 
+getgenv().train = false;
 
+getgenv()["IrisAd"] = true
+
+local Notification = loadstring(game:HttpGet("https://api.irisapp.ca/Scripts/IrisBetterNotifications.lua"))()
+
+Notification.Notify("System", "wait loading", "EPIC", {
+
+Duration = 1,       
+
+Main = {
+
+    Rounding = true,
+
+}
+
+});
+
+
+
+Setclipboard("https://discord.gg/c7NaAzEu")
+
+Wait("0.5")
 
 --[[
 i made sytronight, enjoy the source code skids, now fuck you bitch vamp idiot gay dick sucker
@@ -1583,7 +1582,7 @@ local colors = {
 	TextColor = Color3.fromRGB(255,255,255),
 	ElementColor = Color3.fromRGB(20, 20, 20)
 }
-local kavoUi = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandLittleBrother/SytroNight4ROBLOX/main/libraries/kavo.lua"))()
+local kavoUi = loadstring(game:HttpGet('https://raw.githubusercontent.com/romoneand/kavoui/main/NewMain'))() 
 local window = kavoUi.CreateLib("SytroNight Reborn, "BloodTheme")
 local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/Libraries/entityHandler.lua", true))()
 
@@ -1636,7 +1635,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(-0.000772226602, 0, 0.0343558267, 0)
 TextLabel.Size = UDim2.new(0.170134634, 0, 0.0700389072, 0)
 TextLabel.Font = Enum.Font.GothamBold
-TextLabel.Text = "SytroNight Reborn"
+TextLabel.Text = "SytroNight"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 28.000
@@ -1656,7 +1655,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(-0.000772226602, 0, 0.67410934, 0)
 TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
 TextLabel_2.Font = Enum.Font.GothamBold
-TextLabel_2.Text = "v??"
+TextLabel_2.Text = "Reborn"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 24.000
